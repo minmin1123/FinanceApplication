@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/theme_orange">
+
+        <ImageView
+            android:id="@+id/backIv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="10dp"
+            android:src="@drawable/back" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+
+        <EditText
+            android:id="@+id/nameEt"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:hint="项目名称"
+            android:textSize="18sp"
+            android:textColor="@color/font_gray"
+            />
+
+        <RadioGroup
+            android:id="@+id/typeRg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:checked="true"
+                android:id="@+id/incomeRb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/income"/>
+
+            <RadioButton
+                android:id="@+id/expendRb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/expend"/>
+
+        </RadioGroup>
+
+
+        <Button
+            android:id="@+id/addBt"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="@string/add_item"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/add_bt_bg"
+            android:textSize="18sp"
+            android:textColor="@color/font_gray"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line_gray"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <com.application.example.financeapplication.swipemenulistview.SwipeMenuListView
+            android:id="@+id/listLv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:descendantFocusability="blocksDescendants"
+            android:divider="#0000" />
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_income"
+        android:orientation="horizontal"
+        android:layout_margin="3dp"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/nameTv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:text="芸豆"
+            android:textColor="@color/font_gray"
+            android:textSize="15sp"
+            android:layout_margin="5dp"/>
+
+        <ImageView
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/line_gray"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:id="@+id/typeTv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:text="支出"
+            android:textColor="@color/font_gray"
+            android:textSize="15sp"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+
+</LinearLayout>
